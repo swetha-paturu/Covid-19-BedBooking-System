@@ -2,6 +2,13 @@ package com.usecase.hospitalmgmt.hospital.model;
 
 public class AccountInfo {
 	
+	private int hospitalId;	
+	public int getHospitalId() {
+		return hospitalId;
+	}
+	public void setHospitalId(int hospitalId) {
+		this.hospitalId = hospitalId;
+	}
 	private int patientId;
 	private int staffId;
 	private String patientName;

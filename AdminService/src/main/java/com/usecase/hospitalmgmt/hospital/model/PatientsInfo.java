@@ -2,6 +2,13 @@ package com.usecase.hospitalmgmt.hospital.model;
 
 public class PatientsInfo {
 	
+	private int hospitalId;	
+	public int getHospitalId() {
+		return hospitalId;
+	}
+	public void setHospitalId(int hospitalId) {
+		this.hospitalId = hospitalId;
+	}
 	private String adharId;	
 	private String patientName;
 	private String gender;
@@ -10,7 +17,13 @@ public class PatientsInfo {
 	private String address;
 	private String diseaseType;
 	private String roomType;
-	private int price;
+	private int cost;
+	public int getCost() {
+		return cost;
+	}
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
 	private String approvalStatus;
 	
 	public String getApprovalStatus() {
@@ -67,12 +80,7 @@ public class PatientsInfo {
 	public void setRoomType(String roomType) {
 		this.roomType = roomType;
 	}
-	public int getPrice() {
-		return price;
-	}
-	public void setPrice(int price) {
-		this.price = price;
-	}
+	
 	
 
 }

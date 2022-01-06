@@ -11,7 +11,21 @@ public class PatientRegistration {
 	private String diseaseType;
 	private String roomType;
 	private int price;
+	private int patientId;
+	private int isDeleted;
 	
+	public int getIsDeleted() {
+		return isDeleted;
+	}
+	public void setIsDeleted(int isDeleted) {
+		this.isDeleted = isDeleted;
+	}
+	public int getPatientId() {
+		return patientId;
+	}
+	public void setPatientId(int patientId) {
+		this.patientId = patientId;
+	}
 	public String getAdharId() {
 		return adharId;
 	}

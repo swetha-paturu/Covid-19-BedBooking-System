@@ -2,6 +2,14 @@ package com.usecase.hospitalmgmt.hospital.model;
 
 public class HospitalInfo {
 	
+	private Long hospitalId;	
+	private int isDeleted;
+	public int getIsDeleted() {
+		return isDeleted;
+	}
+	public void setIsDeleted(int isDeleted) {
+		this.isDeleted = isDeleted;
+	}
 	private String hospitalName;
 	private String hospitalType;
 	private int noOfBeds;
@@ -14,6 +22,12 @@ public class HospitalInfo {
 	private String address;
 	private String nearByLandmark;
 	
+	public Long getHospitalId() {
+		return hospitalId;
+	}
+	public void setHospitalId(Long hospitalId) {
+		this.hospitalId = hospitalId;
+	}	
 	public String getHospitalName() {
 		return hospitalName;
 	}
